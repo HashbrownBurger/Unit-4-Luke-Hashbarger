@@ -2,12 +2,23 @@
 
 public class CoinTester{
   public static void main(String[] args) {
-    Coin myCoin = new Coin();
-    Coin yourCoin = new Coin();
+    int timesHeads = 0;
+    int timesTails = 0;
+    int timesToFlip = 10000;
 
-    for (int i = 1; i <= 10; i++){
+    for (int i = 1; i <= timesToFlip; i++){
+    String head = "HEADS";
+    String tail = "TAILS";
+    Coin myCoin = new Coin();
     System.out.println("My coin = " + myCoin.toString());
+    if(myCoin.isHeads()){
+      timesHeads++;}
+    else{
+      timesTails++;
+      }
 }
+  System.out.println("You had heads " + timesHeads + " times");
+  System.out.println("You had tails " + timesTails + " times");
 
   }
 }

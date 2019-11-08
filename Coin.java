@@ -24,6 +24,19 @@ this is the section of the class containing  the methods (behaviors) of a coin
 flip method assigns randomly chosen value to the face of the coin
 */
 
+/*
+accessor method for face varriable (a getter)
+*/
+public int getFace(){
+  return face;
+}
+
+/*
+Set method
+*/
+public void getFace(int newFace){
+  face = newFace;
+}
 
   public void flip(){
     face = (int) (Math.random() * 2);
